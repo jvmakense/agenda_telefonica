@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+table {
+        border-collapse: collapse;
+}
+td {
+    border: solid;
+    border-radius: 1px;
+    width: 240px;
+}
+tr {
+    
+}
+input {
+    width: 98%;
+    border: none;
+}
+button {
+    margin-top: 5px;
+    width: 120px;
+}
+#tabela {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#salvos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
