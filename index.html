@@ -1,36 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salvar Nomes e Números</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Salvar números</h1>
-    <div id="tabela">
-        <table>
-        <tr>
-          <td>Nome</td>
-          <td>número</td>
-        </tr>
-        <tr>
-          <td><input id="nome" type="text"></td>
-          <td><input id="numero" type="number"></td>
-        </tr>
-      </table>
-    </div>
-    <button onclick="salvar()">Salvar</button>
-    <h3>Números salvos</h3>
-    <div id="salvos">
-      <table id="numeros-salvos">
-        <tr>
-          <td id="nome-salvo">Nome</td>
-          <td id="numero-salvo">número</td>
-        </tr> 
-      </table>
-    </div>
+
+<label for="nome">Nome:</label>
+<input type="text" id="nome">
+
+<label for="telefone">Telefone:</label>
+<input type="text" id="telefone">
+
+<button onclick="adicionarContato()">Adicionar Contato</button>
+
+<table id="tabelaContatos">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Telefone</th>
+    </tr>
+  </thead>
+  <tbody id="corpoTabelaContatos"></tbody>
+</table>
 </body>
 <script src="app.js"></script>
 </html>
-<td>${nome}</td>
